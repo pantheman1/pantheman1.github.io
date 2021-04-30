@@ -29,6 +29,18 @@ article#resume {
   height: 70vh;
 }
 
+.technologies-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px 25px 0px 25px;
+}
+
+.technologies {
+  padding-right: 20px;
+}
+
+/* End of my edits */
+
 .link-bottom {
   border-bottom: dotted 1px rgba(255, 255, 255, 0.5);
 }

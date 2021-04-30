@@ -33,7 +33,7 @@
 								<li><a href="#intro">Intro</a></li>
 								<li><a href="#projects">Projects</a></li>
 								<li><a href="#resume">Resume</a></li>
-								<li><a href="#about">About</a></li>
+								<li><a href="#skills">Skills</a></li>
 								<li><a href="#contact">Contact</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
@@ -57,20 +57,25 @@
 								<!-- GearAgain -->
 								<a href="https://gearagain.herokuapp.com/" target="_blank"><h2 class="project__title">GearAgain</h2></a>
 								<span class="image main"><a href="https://gearagain.herokuapp.com/" target="_blank"><img src="images/gahomepage.jpg" alt="GearAgain" /></a></span>
-								<p>GearAgain is an ecommerce site where users can buy and sell used outdoor gear. I built the application using JavaScript, React, and Redux on the front end, Express and Sequelize on the back end, and Postgres for the database.</p>
-								<p>The idea for GearAgain came to me as I watched my wife buy and resell used clothing, shoes, and other items online. Her experience and our passion for the outdoors led me to build a used outdoor gear selling platform. When people use my app, I can encourage people to preserve this beautiful planet on which we live, and at the same time help others find quality outdoor gear for a great price.</p>
+								<p>GearAgain is an ecommerce site where users can buy and sell used outdoor gear. I built the application using JavaScript, React, and Redux on the front end, Express and Sequelize on the back end, and Postgres for the database. React components turned out to be extremely helpful because of the nature of needing to display identical product listings throughout the site.</p>
+								<p>I am particularly proud the shopping cart feature. When a user adds items to their cart, a POST request is generated which posts the item to the database and updates the Redux store so that the items properly display in the cart. My goal with this approach (as opposed to using cookies or localstorage) was to ensure that the user's cart would persist across sessions and across devices.</p>
+								<p>The idea for GearAgain came to me as I watched my wife buy and resell used clothing, shoes, and other items online. Her experience with online sales, and our passion for the outdoors led me to build this platform. When people use my app, it encourages people to preserve this beautiful planet on which we live, and at the same time help others find quality outdoor gear for a great price.</p>
 								
 								<!-- OpenChef -->
 								<a href="https://open-chef.herokuapp.com/" target="_blank"><h2 class="project__title">OpenChef</h2></a>
 								<span class="image main"><a href="https://open-chef.herokuapp.com/" target="_blank"><img src="images/ochomepage.jpg" alt="OpenChef" /></a></span>
-								<p></p>
-								<p></p>
+								<p>OpenChef is an <a href="https://opentable.com" target="_blank">OpenTable</a> clone where users can browse for and book chefs to come cook at their event. We utilized JavaScript, React, and Redux on the front end, and Python and Flask-SQLAlchemy on the back end with a PostgreSQL database.</p>
+								<p>My main focus was building a dynamic profile page which allows users to view and update their user and/or chef information. I utilized conditional logic and React state management to allow seamless toggling between Reservations and Account info.</p> 
+								<p>I used thunk middleware and the built-in JavaScript <strong>fetch</strong> method to make a <strong>PATCH</strong> request to the back end where I wrote Python queries to update the user info in the PostgreSQL database.</p>
+								<p>Users can also view their chef reservations, past and current, which I styled using flexbox and I created the functionality on the front end and back end to both edit and delete a reservation.</p>
 								
 								<!-- Do Your Chores! -->
 								<a href="https://doyourchores.herokuapp.com/" target="_blank"><h2 class="project__title">Do Your Chores!</h2></a>
 								<span class="image main"><a href="https://doyourchores.herokuapp.com/" target="_blank"><img src="images/dychomepage.jpg" alt="Do your chores" /></a></span>
-								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+								<p>At some point, every parent wishes their kids would just stop playing for long enough to do their chores. I am such a parent, and getting my four rag-a-muffins to do their chores...is a chore.</p> 
+								<p>The Do Your Chores! web application aims to solve the issue by allowing parents to sign in and add chores to different "Zones" in their house. Each chore is assigned to a child user who works to complete their list of assigned chores. Each time a chore is completed by a child, the parent will get prompted to approve the work. Once the chore is approved, the chore marks as complete, and the parent can say without any hesitation, "Yes, you can go play with friends."</p>
+								<p>The front end is built using React, Redux, and JavaScript and the backend uses Express, Sequelize, and PostgreSQL for the database. The app allows for two types of users: a parent, or account owner, and a child, who has limited access.</p>
+								<p>In future versions of this app, each time a child completes a chore they will make progress towards rewards that the parent and child set together.</p>
 							</article>
 
 						<!-- Resume -->
@@ -87,12 +92,29 @@
 							</div>
 							</article>
 
-						<!-- About -->
-							<article id="about">
-								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
-							</article>
+						<!-- Skills -->
+        <article id="skills">
+          <h2 class="major">Skills</h2>
+          <div class="technologies-wrapper">
+            <p class="icon brands fa-js technologies">&nbsp;&nbsp;JavaScript</p>
+            <p class="icon brands fa-node-js technologies">&nbsp;&nbsp;Node.js</p>
+            <p class="icon brands fa-react technologies">&nbsp;&nbsp;React.js</p>
+            <p class="icon brands fa-skyatlas technologies">&nbsp;&nbsp;Redux</p>
+            <p class="icon solid fa-server technologies">&nbsp;&nbsp;Express.js</p>
+            <p class="icon solid fa-cube technologies">&nbsp;&nbsp;Sequelize</p>
+            <p class="icon brands fa-python technologies">&nbsp;&nbsp;Python</p>
+            <p class="icon brands fa-affiliatetheme technologies">&nbsp;&nbsp;Flask</p>
+            <p class="icon solid fa-flask technologies">&nbsp;&nbsp;SQLAlchemy</p>
+            <p class="icon brands fa-evernote technologies">&nbsp;&nbsp;PostgreSQL</p>
+            <p class="icon brands fa-html5 technologies">&nbsp;&nbsp;HTML</p>
+            <p class="icon brands fa-css3-alt technologies">&nbsp;&nbsp;CSS</p>
+            <p class="icon brands fa-git-alt technologies">&nbsp;&nbsp;Git</p>
+            <p class="icon brands fa-markdown technologies">&nbsp;&nbsp;Markdown</p>
+            <p class="icon brands fa-aws technologies">&nbsp;&nbsp;AWS S3</p>
+            <!-- <p class="icon solid fa-database technologies">&nbsp;&nbsp;SQL</p> -->
+            <!-- <p class="icon brands fa-docker technologies">&nbsp;&nbsp;Docker</p> -->
+          </div>
+        </article>
 
 						<!-- Contact -->
 							<article id="contact">

@@ -20,12 +20,12 @@
 				<!-- Header -->
 					<header id="header">
 						<div class="logo">
-							<span class="icon fa-gem"></span>
+							<span class="fas fa-terminal fa-2x"></span>
 						</div>
 						<div class="content">
 							<div class="inner">
-								<h1>My name is Peter Anderson. </h1>
-								<p>I am a software developer from Utah.</p>
+								<h1>Peter Anderson</h1>
+								<p>I am a software developer from Utah. </p>
 							</div>
 						</div>
 						<nav>
@@ -47,8 +47,9 @@
 							<article id="intro">
 								<h2 class="major">Intro</h2>
 								<span class="image main"><img src="images/intropicfam.jpg" alt="" /></span>
-								<p>My name is Peter Anderson. I am a software developer from Utah and spent 8 years in the field of international business operations. Developing relationships of trust with people who come from diverse backgrounds is my greatest strength. My background lends itself to a unique perspective when approaching problems.</p>
-								<p>I became a software engineer because I love writing programs that provide creative solutions for everyday problems. Before becoming a programmer, I used Microsoft Excel to create these efficiencies. Now I use JavaScript, React, Redux, Express, and more. Take a look at some<a href="#projects"> projects I have built</a>!</p>
+								<p>My name is Peter Anderson. After 8 years working in operations management for network marketing companies managing global offices, processes, and people, I decided to expand my experience to include software engineering skills. Developing relationships of trust with people who come from diverse backgrounds is my greatest strength. My background lends itself to a unique perspective when approaching problems and the ability to communicate through these issues with others to find the best solution.</p>
+								<p>I became a software engineer because I love writing programs that provide creative solutions for everyday problems. Before becoming a programmer, I used Microsoft Excel to create these efficiencies. For example, I have personally built solutions for managing inventory on a global scale. I built an Excel model to track and come up with profitable product pricing. I helped build a forecasting model.</p>
+								<p>I now get to use JavaScript, React, Redux, Express, and more to build projects that mean something to me, and will provide value to customers and to a company. Take a look at some<a href="#projects"> projects I have built</a>!</p>
 							</article>
 
 						<!-- Projects -->
@@ -119,7 +120,7 @@
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Contact</h2>
-								<form method="post" action="mailto:peterburtonanderson@gmail.com?subject=Let's talk!">
+								<form action="POST" data-netlify="true">
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Name</label>
@@ -132,6 +133,13 @@
 										<div class="field">
 											<label for="message">Message</label>
 											<textarea name="message" id="message" rows="4"></textarea>
+										</div>
+										<div class="field">
+											<label for="upload">Upload</label>
+											<input type="file" name="myfile" id="myfile" rows="4" />
+										</div>
+										<div class="field">
+											<div data-netlify-recaptcha="true"></div>
 										</div>
 									</div>
 									<ul class="actions">
